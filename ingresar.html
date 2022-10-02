@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="deps/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- Jquery -->
+    <script
+      src="deps/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+    <!-- PopperJS -->
+    <script
+      src="deps/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <script
+      src="deps/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/js/ingresar.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <form>
+          <div class="mb-5">
+            <label for="nombre" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              placeholder="Correo"
+            />
+          </div>
+          <div class="mb-5">
+            <label for="apellido" class="form-label"></label>
+            <input
+              type="text"
+              class="form-control"
+              id="apellido"
+              placeholder="Contraseña"
+            />
+          </div>
+          <div class="mb-4">
+            <button class="btn btn-success" id="enter-button">Ingresar</button>
+          </div>
+          <div class="mb-4">
+            <a href="http://127.0.0.1:5500/registrarse.html" class="btn btn-secondary">Registrarse</a>
+          </div>
+          <div class="mb-4">
+            <button class="btn btn-secondary">Olvidé mi contraseña</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
