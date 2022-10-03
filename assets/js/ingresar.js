@@ -5,18 +5,13 @@ $(document).ready(function () {
 
     $("#enter-button").click(function () {
         let email = $("#email").val();
-        let email2 = $("#email2").val();
 
-        if (emailRegex.test(email) && email === email2) {
+        if (emailRegex.test(email)) {
             $("#email").removeClass("is-invalid");
-            $("#email2").removeClass("is-invalid");
             $("#email").addClass("is-valid");
-            $("#email2").addClass("is-valid");
         } else {
             $("#email").removeClass("is-valid");
-            $("#email2").removeClass("is-valid");
             $("#email").addClass("is-invalid");
-            $("#email2").addClass("is-invalid");
         }
     });
 });
