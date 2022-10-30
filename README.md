@@ -11,7 +11,7 @@ Para realizar la migracion, se debe crear un archivo .env tal como se indica en 
 Luego se ejectua el siguiente comando:
 
 ```bash
-$ npm prisma migrate deploy
+$ npx prisma migrate deploy
 ```
 
 Luego, para correr la aplicacion, ejecute los siguientes comandos dependiendo del modo en el que desee ejecutar la aplicacion:
