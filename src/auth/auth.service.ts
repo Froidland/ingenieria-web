@@ -6,7 +6,7 @@ import { SignUpDto } from './dto';
 import * as argon from 'argon2';
 import { PrismaService } from 'src/prisma/prisma.service';
 import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
-import { SignInDto } from './dto/signing.dto';
+import { SignInDto } from './dto/signin.dto';
 import { JwtService } from '@nestjs/jwt';
 import { ConfigService } from '@nestjs/config';
 
