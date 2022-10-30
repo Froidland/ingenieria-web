@@ -18,7 +18,7 @@ model User {
     email String @unique
     hash  String
 
-    calorieItems   CalorieItem[]
+    calorieItems   FoodItem[]
     excerciseItems ExcerciseItem[]
 
     createdAt DateTime @default(now())
@@ -27,7 +27,7 @@ model User {
     @@map("users")
 }
 
-model CalorieItem {
+model FoodItem {
     id           Int    @id @default(autoincrement())
     user         User   @relation(fields: [userId], references: [id])
     userId       Int
@@ -36,7 +36,7 @@ model CalorieItem {
 
     createdAt DateTime @default(now())
 
-    @@map("calorieItems")
+    @@map("food_items")
 }
 
 model ExcerciseItem {
@@ -48,5 +48,5 @@ model ExcerciseItem {
 
     createdAt DateTime @default(now())
 
-    @@map("excerciseItems")
+    @@map("excercise_items")
 }
