@@ -8,9 +8,11 @@ $ npm install
 
 Para realizar la migracion, se debe crear un archivo .env tal como se indica en .env-example y rellenarlo con los datos necesarios. Esto asume que se cuenta con un servidor con MySql o MariaDB.
 
-Luego se ejectua el siguiente comando:
+Luego se ejecutan los siguientes comandos:
 
 ```bash
+$ npx prisma generate
+
 $ npx prisma migrate deploy
 ```
 
